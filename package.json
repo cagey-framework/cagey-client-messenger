@@ -1,0 +1,39 @@
+{
+  "name": "cagey-client-messenger",
+  "version": "0.0.1",
+  "description": "Client/server messaging for the Cagey game framework",
+  "main": "lib/index.js",
+  "scripts": {
+    "precommit": "npm test",
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cagey-framework/cagey-client-messenger.git"
+  },
+  "keywords": [
+    "game",
+    "framework",
+    "client",
+    "server",
+    "messaging",
+    "messenger"
+  ],
+  "files": [
+    "lib",
+    "LICENSE"
+  ],
+  "author": "Ron Korving <rkorving@wizcorp.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cagey-framework/cagey-client-messenger/issues"
+  },
+  "homepage": "https://github.com/cagey-framework/cagey-client-messenger#readme",
+  "dependencies": {
+    "eventemitter2": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "husky": "^0.14.3"
+  }
+}
