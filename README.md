@@ -1,5 +1,7 @@
 # Client/server messaging for the Cagey game framework
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cagey-framework/cagey-client-messenger.svg)](https://greenkeeper.io/)
+
 **WORK IN PROGRESS**
 
 
