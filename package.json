@@ -1,6 +1,6 @@
 {
   "name": "cagey-client-messenger",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Client/server messaging for the Cagey game framework",
   "main": "lib/index.js",
   "scripts": {
