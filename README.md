@@ -96,12 +96,14 @@ This tells the ClientMessenger to disconnect from the client, and invokes the ha
 When you receive a message from your WebSocket (or other protocol), call this function to pass the serialized message.
 It will be sent to your registered deserialize-function, which must return an array. The ClientMessenger will then
 emit the arguments, meaning that the first array-element is the event name and the remaining elements are the arguments
-passed to your event handler.
+passed to your event handler. After this, it will emit `delivered` with the deserialized arguments-array as a single
+argument. This allows you to do any cleanup operations, like passing objects back into a pool.
 
 Example:
 
 If your deserialize function returns `['message', { hello: 'world' }]`, the ClientMessenger will emit the event
-`"message"` and pass the object `{ hello: 'world' }` as the only argument.
+`"message"` and pass the object `{ hello: 'world' }` as the only argument. After this, the ClientMessenger will emit
+`"delivered"` and pass the array `['message', { hello: 'world' }]` as the only argument.
 
 **async send(any ...args)**
 
